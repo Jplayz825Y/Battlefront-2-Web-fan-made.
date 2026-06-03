@@ -1,0 +1,197 @@
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Star Wars Battlefront II</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #050814;
+      color: #f5f5f5;
+      margin: 0;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      border: 1px solid #333;
+      background: #0b1020;
+    }
+
+    header, footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: #11172b;
+    }
+
+    header .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    header .contact {
+      font-size: 0.9rem;
+      text-align: right;
+    }
+
+    nav {
+      text-align: center;
+      padding: 10px 0;
+      background: #151b33;
+    }
+
+    nav a {
+      color: #f5f5f5;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .splash {
+      text-align: center;
+      padding: 30px 20px;
+      background: url('splash-image.jpg') center/cover no-repeat;
+      min-height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .splash h1 {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 15px 25px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .heroes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      padding: 0 20px 20px;
+    }
+
+    .hero-card {
+      background: #151b33;
+      border: 1px solid #333;
+      border-radius: 6px;
+      padding: 10px;
+    }
+
+    .hero-card h3 {
+      margin: 10px 0;
+    }
+
+    .hero-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .hero-card p {
+      font-size: 0.9rem;
+      color: #d0d0d0;
+    }
+
+    footer {
+      font-size: 0.85rem;
+      text-align: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="logo">Star Wars Battlefront II</div>
+      <div class="contact">
+        Contact: info@battlefront2fanpage.com<br />
+        Twitter: @BF2Heroes
+      </div>
+    </header>
+
+    <nav>
+      <a href="#intro">Home</a>
+      <a href="#heroes">Heroes</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="splash">
+      <h1>Join the Battle on the Front Lines</h1>
+    </section>
+
+    <section id="intro" class="section">
+      <h2>Introduction</h2>
+      <p>
+        Star Wars Battlefront II lets you step into the boots of iconic heroes and villains
+        across the Star Wars galaxy. From intense ground battles to epic space dogfights,
+        every match feels cinematic and unforgettable.
+      </p>
+    </section>
+
+    <section id="heroes" class="section">
+      <h2>Star Wars Battlefront II Heroes</h2>
+    </section>
+
+    <div class="heroes-grid">
+      <div class="hero-card">
+        <h3>Anakin Skywalker</h3>
+        <img src="https://tse1.mm.bi" />
+        <p>
+          A powerful Jedi with aggressive combat abilities, Anakin excels at pushing through
+          enemy lines and turning the tide of battle.
+        </p>
+      </div>
+
+      <div class="hero-card">
+        <h3>Obi-Wan Kenobi</h3>
+        <img src="obiwan.jpg" alt="Obi-Wan Kenobi" />
+        <p>
+          Calm, defensive, and precise, Obi-Wan uses his mastery of the Force and lightsaber
+          defense to protect allies and control engagements.
+        </p>
+      </div>
+
+      <div class="hero-card">
+        <h3>Yoda</h3>
+        <img src="yoda.jpg" alt="Yoda" />
+        <p>
+          Small in size but immense in power, Yoda is agile and hard to hit, using acrobatics
+          and the Force to overwhelm opponents.
+        </p>
+      </div>
+    </div>
+
+    <footer id="contact">
+      Footer info goes here — fan-made Battlefront II page, not affiliated with EA or Disney.
+    </footer>
+  </div>
+</body>
+</html>
+
+git remote add origin https://github.com/Jplayz825Y/Battlefront-2-Web-fan-made..git
+git branch -M main
+git push -u origin main
